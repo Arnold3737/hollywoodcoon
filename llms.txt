@@ -1,0 +1,29 @@
+# Hollywood Coon — Maine Coon Cat Breeder
+# https://hollywoodcoon.com
+
+## About
+[Brief site description placeholder for AI search engines]
+
+## Pages
+- /index.html — Home page: hero, key stats, about preview, kittens preview
+- /about.html — About the cattery and breeding philosophy
+- /gallery.html — Photo gallery of cats and kittens
+- /kittens.html — Available kittens catalog
+- /kitten-detail.html — Individual kitten profile template
+- /our-cats.html — Parent cats and breeding program
+- /contact.html — Contact and inquiry form
+- /faq.html — Frequently asked questions
+- /health-testing.html — Health testing protocols and results
+- /shipping.html — Kitten delivery and shipping information
+- /purchase-contract.html — Purchase agreement details
+- /waiting-list.html — Join the waiting list
+- /privacy-policy.html — Privacy policy
+- /terms-of-sale.html — Terms and conditions of sale
+- /cookie-policy.html — Cookie usage policy
+- /404.html — Custom 404 error page
+
+## Key Entities
+- Entity: Hollywood Coon (Maine Coon breeder)
+- Location: [Location placeholder]
+- Specialty: Maine Coon kittens
+- Services: Kitten sales, breeding program, health testing

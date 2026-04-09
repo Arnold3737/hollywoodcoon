@@ -1,0 +1,36 @@
+/* === ABOUT PAGE === */
+
+@layer pages {
+  /* === STORY === */
+  .about-story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-12);
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    .about-story {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* === BREEDING PROGRAM === */
+  .about-breeding {
+    padding: var(--space-16) 0;
+  }
+
+  .about-breeding__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-8);
+  }
+
+  /* === VALUES === */
+  .about-values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-8);
+    padding: var(--space-16) 0;
+  }
+}

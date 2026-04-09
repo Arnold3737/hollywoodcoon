@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hollywoodcoon.com/sitemap.xml

@@ -1,0 +1,42 @@
+/* === WAITING LIST PAGE === */
+
+@layer pages {
+  /* === WAITING LIST LAYOUT === */
+  .waiting-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-12);
+  }
+
+  @media (max-width: 768px) {
+    .waiting-layout {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* === PROCESS STEPS === */
+  .waiting-steps {
+    display: grid;
+    gap: var(--space-6);
+  }
+
+  .waiting-step {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--space-4);
+    align-items: start;
+  }
+
+  .waiting-step__number {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    background: var(--color-primary);
+    color: var(--color-bg);
+    border-radius: var(--radius-full);
+  }
+}

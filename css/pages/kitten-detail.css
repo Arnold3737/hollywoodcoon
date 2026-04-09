@@ -1,0 +1,49 @@
+/* === KITTEN DETAIL PAGE === */
+
+@layer pages {
+  /* === DETAIL LAYOUT === */
+  .kitten-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-12);
+    align-items: start;
+  }
+
+  @media (max-width: 768px) {
+    .kitten-detail {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* === KITTEN GALLERY === */
+  .kitten-detail__gallery {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  /* === KITTEN INFO === */
+  .kitten-detail__info {
+    padding: var(--space-6);
+  }
+
+  .kitten-detail__name {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-4);
+  }
+
+  .kitten-detail__meta {
+    display: grid;
+    gap: var(--space-3);
+    margin-bottom: var(--space-8);
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+  }
+
+  /* === PARENTS SECTION === */
+  .kitten-detail__parents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+    margin-top: var(--space-8);
+  }
+}

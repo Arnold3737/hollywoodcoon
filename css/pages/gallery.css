@@ -1,0 +1,27 @@
+/* === GALLERY PAGE === */
+
+@layer pages {
+  /* === GALLERY GRID === */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--space-4);
+  }
+
+  .gallery-item {
+    overflow: hidden;
+    border-radius: var(--radius-md);
+  }
+
+  .gallery-item a {
+    display: block;
+  }
+
+  /* === GALLERY FILTERS === */
+  .gallery-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-bottom: var(--space-8);
+  }
+}

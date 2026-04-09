@@ -1,0 +1,25 @@
+/* === OUR CATS PAGE === */
+
+@layer pages {
+  /* === CATS GRID === */
+  .cats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: var(--space-8);
+  }
+
+  /* === CAT CARD === */
+  .cat-card__titles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-top: var(--space-2);
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+  }
+
+  /* === BREEDING PAIRS === */
+  .breeding-pairs {
+    padding: var(--space-16) 0;
+  }
+}
