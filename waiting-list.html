@@ -211,11 +211,50 @@
       <p>$500 non-refundable deposit. Applied toward final kitten price. Deposit reserves your place for the next available litter matching your preferences.</p>
     </section>
 
-    <!-- JOIN CTA -->
+    <!-- JOIN FORM -->
     <section class="section section--below-fold" aria-labelledby="join-heading">
       <h2 id="join-heading" class="section__heading">Ready to Join?</h2>
-      <p>Contact us to get on the waiting list or ask any questions. Email <a href="mailto:hello@hollywoodcoon.com">hello@hollywoodcoon.com</a> or call <a href="tel:+14245550198">(424) 555-0198</a>.</p>
-      <a href="contact.html" class="btn btn-primary">Join Waiting List</a>
+      <p>Fill out the form below and we'll be in touch within 48 hours. You can also email <a href="mailto:hello@hollywoodcoon.com">hello@hollywoodcoon.com</a> or call <a href="tel:+14245550198">(424) 555-0198</a>.</p>
+      <div>
+        <form novalidate action="https://formspree.io/f/XXXXXXXX" method="POST">
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1">
+          <input type="hidden" name="_next" value="https://hollywoodcoon.com/waiting-list.html?sent=1">
+          <input type="hidden" name="_subject" value="New waiting list request — Hollywood Coon">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required
+                   autocomplete="name"
+                   aria-describedby="name-error">
+            <span id="name-error" class="form-error" role="alert" hidden
+                  data-error="name"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required
+                   autocomplete="email"
+                   aria-describedby="email-error">
+            <span id="email-error" class="form-error" role="alert" hidden
+                  data-error="email"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number (optional)</label>
+            <input type="tel" id="phone" name="phone"
+                   autocomplete="tel"
+                   aria-describedby="phone-error">
+            <span id="phone-error" class="form-error" role="alert" hidden
+                  data-error="phone"></span>
+          </div>
+          <div class="form-group">
+            <label for="preferences">Preferences (color, gender, anything else)</label>
+            <textarea id="preferences" name="preferences" required rows="4"
+                      aria-describedby="preferences-error"></textarea>
+            <span id="preferences-error" class="form-error" role="alert" hidden
+                  data-error="preferences"></span>
+          </div>
+          <button type="submit" class="btn btn-primary">Join Waiting List</button>
+        </form>
+        <div id="form-status" role="status" aria-live="polite" aria-atomic="true"></div>
+      </div>
     </section>
   </main>
 
@@ -246,6 +285,7 @@
   </footer>
 
   <script src="js/nav.js" defer></script>
+  <script src="js/form.js" defer></script>
   <script defer>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js');

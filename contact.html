@@ -169,7 +169,10 @@
       <div class="contact-layout">
         <!-- FORM -->
         <div>
-          <form novalidate action="#" method="post">
+          <form novalidate action="https://formspree.io/f/XXXXXXXX" method="POST">
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1">
+            <input type="hidden" name="_next" value="https://hollywoodcoon.com/contact.html?sent=1">
+            <input type="hidden" name="_subject" value="New contact form submission — Hollywood Coon">
             <div class="form-group">
               <label for="name">Your Name</label>
               <input type="text" id="name" name="name" required
@@ -217,6 +220,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Send Message</button>
           </form>
+          <div id="form-status" role="status" aria-live="polite" aria-atomic="true"></div>
         </div>
 
         <!-- CONTACT INFO -->
