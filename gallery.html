@@ -7,7 +7,7 @@
   <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/icon-192.png">
-  <meta name="description" content="[Gallery page meta description placeholder]">
+  <meta name="description" content="Browse photos of our Maine Coon kittens, adult cats, and cattery at Hollywood Coon in Los Angeles. Champion bloodlines, stunning coats.">
   <link rel="canonical" href="https://hollywoodcoon.com/gallery.html">
   <link rel="preload" as="font" type="font/woff2" href="fonts/cormorant-garamond-regular.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="fonts/jost-regular.woff2" crossorigin>
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/pages/gallery.css">
   <!-- Open Graph -->
   <meta property="og:title" content="Gallery | Hollywood Coon">
-  <meta property="og:description" content="[Gallery page meta description placeholder]">
+  <meta property="og:description" content="Browse photos of our Maine Coon kittens, adult cats, and cattery at Hollywood Coon in Los Angeles.">
   <meta property="og:image" content="https://hollywoodcoon.com/assets/og-gallery.jpg">
   <meta property="og:url" content="https://hollywoodcoon.com/gallery.html">
   <meta property="og:type" content="website">
@@ -46,7 +46,7 @@
       {
         "@type": "ImageGallery",
         "name": "Hollywood Coon Gallery",
-        "description": "[Gallery description placeholder]",
+        "description": "Photo gallery of Maine Coon kittens, adult cats, and the Hollywood Coon cattery in Los Angeles.",
         "url": "https://hollywoodcoon.com/gallery.html"
       },
       {
@@ -93,7 +93,7 @@
               class="nav__toggle">
         <span aria-hidden="true">&#9776;</span>
       </button>
-      <ul id="nav-menu" role="list" data-nav-menu class="nav__menu" hidden
+      <ul id="nav-menu" role="list" data-nav-menu class="nav__menu" hidden>
           <li><a href="index.html" data-nav-link>Home</a></li>
           <li><a href="about.html" data-nav-link>About</a></li>
           <li><a href="gallery.html" data-nav-link aria-current="page">Gallery</a></li>
@@ -129,30 +129,31 @@
                           assets/hero-gallery-1920.webp 1920w"
                   sizes="100vw">
           <img src="assets/hero-gallery-1920.jpg"
-               alt="[Gallery page hero image placeholder]"
+               alt="Photo gallery of Hollywood Coon Maine Coon cats and kittens"
                width="1920" height="1080"
                fetchpriority="high"
                decoding="async">
         </picture>
       <div class="hero__content">
-        <h1 id="gallery-hero-heading" class="hero__title">[Gallery Page Heading Placeholder]</h1>
-        <p class="hero__subtitle">[Gallery page subheading placeholder]</p>
+        <h1 id="gallery-hero-heading" class="hero__title">Gallery</h1>
+        <p class="hero__subtitle">Our kittens, adult cats, and cattery life in Los Angeles</p>
       </div>
     </section>
 
     <!-- GALLERY FILTERS -->
     <section class="section" aria-labelledby="gallery-grid-heading">
-      <h2 id="gallery-grid-heading" class="section__heading">[Gallery heading placeholder]</h2>
+      <h2 id="gallery-grid-heading" class="section__heading">Browse Photos</h2>
       <div class="gallery-filters">
-        <a href="gallery.html" class="btn btn-secondary" aria-current="page">[All placeholder]</a>
-        <a href="gallery.html?filter=kittens" class="btn btn-secondary">[Kittens placeholder]</a>
-        <a href="gallery.html?filter=adults" class="btn btn-secondary">[Adults placeholder]</a>
+        <a href="gallery.html" class="btn btn-secondary" aria-current="page">All</a>
+        <a href="gallery.html?filter=kittens" class="btn btn-secondary">Kittens</a>
+        <a href="gallery.html?filter=adults" class="btn btn-secondary">Adults</a>
+        <a href="gallery.html?filter=cattery" class="btn btn-secondary">Cattery</a>
       </div>
 
       <!-- GALLERY GRID -->
       <div class="gallery-grid">
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-category="kittens">
           <a href="assets/gallery-1-1920.jpg" data-lightbox>
         <picture>
           <source type="image/avif"
@@ -166,13 +167,13 @@
                           assets/gallery-1-1920.webp 1920w"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw">
           <img src="assets/gallery-1-1920.jpg"
-               alt="[Gallery image 1 placeholder]"
+               alt="Maine Coon kitten blue smoke in natural light"
                width="1920" height="1080"
                loading="lazy">
         </picture>
           </a>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-category="adults">
           <a href="assets/gallery-2-1920.jpg" data-lightbox>
         <picture>
           <source type="image/avif"
@@ -186,13 +187,13 @@
                           assets/gallery-2-1920.webp 1920w"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw">
           <img src="assets/gallery-2-1920.jpg"
-               alt="[Gallery image 2 placeholder]"
+               alt="Silver tabby Maine Coon adult relaxing"
                width="1920" height="1080"
                loading="lazy">
         </picture>
           </a>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-category="cattery">
           <a href="assets/gallery-3-1920.jpg" data-lightbox>
         <picture>
           <source type="image/avif"
@@ -206,13 +207,13 @@
                           assets/gallery-3-1920.webp 1920w"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw">
           <img src="assets/gallery-3-1920.jpg"
-               alt="[Gallery image 3 placeholder]"
+               alt="Hollywood Coon cattery playroom"
                width="1920" height="1080"
                loading="lazy">
         </picture>
           </a>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-category="kittens">
           <a href="assets/gallery-4-1920.jpg" data-lightbox>
         <picture>
           <source type="image/avif"
@@ -226,13 +227,13 @@
                           assets/gallery-4-1920.webp 1920w"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw">
           <img src="assets/gallery-4-1920.jpg"
-               alt="[Gallery image 4 placeholder]"
+               alt="Maine Coon kittens in a litter"
                width="1920" height="1080"
                loading="lazy">
         </picture>
           </a>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-category="kittens">
           <a href="assets/gallery-5-1920.jpg" data-lightbox>
         <picture>
           <source type="image/avif"
@@ -246,13 +247,13 @@
                           assets/gallery-5-1920.webp 1920w"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw">
           <img src="assets/gallery-5-1920.jpg"
-               alt="[Gallery image 5 placeholder]"
+               alt="Maine Coon kitten playing with a feather toy"
                width="1920" height="1080"
                loading="lazy">
         </picture>
           </a>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-category="adults">
           <a href="assets/gallery-6-1920.jpg" data-lightbox>
         <picture>
           <source type="image/avif"
@@ -266,13 +267,13 @@
                           assets/gallery-6-1920.webp 1920w"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw">
           <img src="assets/gallery-6-1920.jpg"
-               alt="[Gallery image 6 placeholder]"
+               alt="Brown classic tabby Maine Coon adult portrait"
                width="1920" height="1080"
                loading="lazy">
         </picture>
           </a>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-category="cattery">
           <a href="assets/gallery-7-1920.jpg" data-lightbox>
         <picture>
           <source type="image/avif"
@@ -286,13 +287,13 @@
                           assets/gallery-7-1920.webp 1920w"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw">
           <img src="assets/gallery-7-1920.jpg"
-               alt="[Gallery image 7 placeholder]"
+               alt="Hollywood Coon cattery living area"
                width="1920" height="1080"
                loading="lazy">
         </picture>
           </a>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-category="kittens">
           <a href="assets/gallery-8-1920.jpg" data-lightbox>
         <picture>
           <source type="image/avif"
@@ -306,13 +307,13 @@
                           assets/gallery-8-1920.webp 1920w"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw">
           <img src="assets/gallery-8-1920.jpg"
-               alt="[Gallery image 8 placeholder]"
+               alt="Red mackerel tabby Maine Coon kitten close-up"
                width="1920" height="1080"
                loading="lazy">
         </picture>
           </a>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-category="adults">
           <a href="assets/gallery-9-1920.jpg" data-lightbox>
         <picture>
           <source type="image/avif"
@@ -326,7 +327,7 @@
                           assets/gallery-9-1920.webp 1920w"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw">
           <img src="assets/gallery-9-1920.jpg"
-               alt="[Gallery image 9 placeholder]"
+               alt="Blue smoke Maine Coon adult resting on a window perch"
                width="1920" height="1080"
                loading="lazy">
         </picture>
@@ -345,7 +346,7 @@
     <!-- LIGHTBOX DIALOG -->
     <dialog id="lightbox-dialog" class="lightbox">
       <picture>
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="[Lightbox image placeholder]" width="1920" height="1080">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Enlarged gallery photo" width="1920" height="1080">
       </picture>
     </dialog>
   </main>
@@ -372,7 +373,7 @@
           <li><a href="404.html" class="footer__link">404</a></li>
         </ul>
       </nav>
-      <p class="footer__copy">[Copyright placeholder] Hollywood Coon. [All rights reserved placeholder].</p>
+      <p class="footer__copy">&copy; 2026 Hollywood Coon. All rights reserved.</p>
     </div>
   </footer>
 
