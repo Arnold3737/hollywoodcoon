@@ -72,10 +72,16 @@
   <!-- Speculation Rules -->
   <script type="speculationrules">
   {
-    "prerender": [{
-      "where": { "href_matches": "/*" },
-      "eagerness": "moderate"
-    }]
+    "prerender": [
+      {
+        "where": { "href_matches": "/kittens.html" },
+        "eagerness": "moderate"
+      },
+      {
+        "where": { "href_matches": "/kitten-detail-1.html" },
+        "eagerness": "moderate"
+      }
+    ]
   }
   </script>
 </head>
@@ -132,6 +138,7 @@
                alt="Hollywood Coon breeding Maine Coon cats"
                width="1920" height="1080"
                fetchpriority="high"
+               loading="eager"
                decoding="async">
         </picture>
       <div class="hero__content">

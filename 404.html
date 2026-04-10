@@ -51,10 +51,16 @@
   <!-- Speculation Rules -->
   <script type="speculationrules">
   {
-    "prerender": [{
-      "where": { "href_matches": "/*" },
-      "eagerness": "moderate"
-    }]
+    "prerender": [
+      {
+        "where": { "href_matches": "/kittens.html" },
+        "eagerness": "moderate"
+      },
+      {
+        "where": { "href_matches": "/kitten-detail-1.html" },
+        "eagerness": "moderate"
+      }
+    ]
   }
   </script>
 </head>
