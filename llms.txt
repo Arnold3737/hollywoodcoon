@@ -1,29 +1,43 @@
-# Hollywood Coon — Maine Coon Cat Breeder
-# https://hollywoodcoon.com
+# Hollywood Coon
+> Premium Maine Coon cattery in Los Angeles, California. TICA-registered since 2018.
 
-## About
-[Brief site description placeholder for AI search engines]
+## Key Entities
+- Cattery: Hollywood Coon
+- Breed: Maine Coon
+- Location: Los Angeles, CA 90028
+- Registry: TICA
+- Breeding Cats: Atlas (Brown Classic Tabby Champion), Elara (Blue Smoke)
+
+## Services
+- Available kittens: Aurora, Luna, Thor, Caspian
+- Health testing: HCM echo, PKD1/SMA DNA, FIV/FeLV
+- Shipping: nationwide (US), flight nanny available
+- Waiting list: $500 deposit
+
+## Contact
+- Email: hello@hollywoodcoon.com
+- Phone: (424) 555-0198
+- Website: https://hollywoodcoon.com
 
 ## Pages
-- /index.html — Home page: hero, key stats, about preview, kittens preview
+- / — Home page: hero, key stats, about preview, kittens preview
 - /about.html — About the cattery and breeding philosophy
 - /gallery.html — Photo gallery of cats and kittens
 - /kittens.html — Available kittens catalog
-- /kitten-detail.html — Individual kitten profile template
+- /kitten-detail.html — Individual kitten profile (Aurora)
+- /kitten-detail-1.html — Aurora: Blue Smoke female
+- /kitten-detail-2.html — Titan: Brown Classic Tabby male
+- /kitten-detail-3.html — Luna: Silver Tabby female
+- /kitten-detail-4.html — Thor: Black Smoke male
+- /kitten-detail-5.html — Stella: Blue Tabby female
+- /kitten-detail-6.html — Caspian: Red Mackerel Tabby male
 - /our-cats.html — Parent cats and breeding program
 - /contact.html — Contact and inquiry form
 - /faq.html — Frequently asked questions
-- /health-testing.html — Health testing protocols and results
+- /health-testing.html — Health testing protocols: HCM, PKD1, SMA, FIV/FeLV
 - /shipping.html — Kitten delivery and shipping information
 - /purchase-contract.html — Purchase agreement details
 - /waiting-list.html — Join the waiting list
 - /privacy-policy.html — Privacy policy
 - /terms-of-sale.html — Terms and conditions of sale
 - /cookie-policy.html — Cookie usage policy
-- /404.html — Custom 404 error page
-
-## Key Entities
-- Entity: Hollywood Coon (Maine Coon breeder)
-- Location: [Location placeholder]
-- Specialty: Maine Coon kittens
-- Services: Kitten sales, breeding program, health testing
