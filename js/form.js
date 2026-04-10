@@ -1,3 +1,4 @@
+if (!('scheduler' in globalThis)) { globalThis.scheduler = { yield: () => Promise.resolve() }; }
 (function() {
   'use strict';
 
