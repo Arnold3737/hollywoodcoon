@@ -408,3 +408,8 @@
   overflow: hidden;
   aspect-ratio: 4/3;
 }
+
+.section--below-fold {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 400px;
+}
