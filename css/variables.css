@@ -13,9 +13,9 @@
   --color-surface:    #000000;
 
   /* === TYPOGRAPHY === */
-  --font-heading: '[FontName]', serif;
-  --font-body:    '[FontName]', sans-serif;
-  --font-mono:    '[FontName]', monospace;
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'Jost', system-ui, sans-serif;
+  --font-mono:    'Fira Code', monospace;
   --text-xs:   clamp(0.75rem,  0.7rem  + 0.25vw, 0.875rem);
   --text-sm:   clamp(0.875rem, 0.8rem  + 0.375vw, 1rem);
   --text-base: clamp(1rem,     0.9rem  + 0.5vw,   1.125rem);
