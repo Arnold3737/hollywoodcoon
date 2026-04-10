@@ -261,5 +261,10 @@
       navigator.serviceWorker.register('/sw.js');
     }
   </script>
+  <script type="module" defer>
+    import {onLCP,onINP,onCLS,onFCP,onTTFB} from 'https://unpkg.com/web-vitals@3/dist/web-vitals.attribution.js';
+    const report = ({name,value,rating}) => console.log(`[CWV] ${name}: ${Math.round(value)} (${rating})`);
+    onLCP(report); onINP(report); onCLS(report); onFCP(report); onTTFB(report);
+  </script>
 </body>
 </html>
