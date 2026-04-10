@@ -18,7 +18,8 @@
     font-size: var(--text-xs);
     border-radius: var(--radius-full);
     background: var(--color-accent);
-    color: var(--color-bg);
+    color: var(--color-primary);
+    font-weight: 700;
   }
 
   /* === FILTER BAR === */
