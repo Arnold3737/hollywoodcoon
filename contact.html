@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Hollywood Coon</title>
+  <title>Contact Hollywood Coon — Maine Coon Cattery Los Angeles</title>
   <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/icon-192.png">
-  <meta name="description" content="[Contact page meta description placeholder]">
+  <meta name="description" content="Contact Hollywood Coon Maine Coon cattery in Los Angeles. Email, phone, or send us a message. We'd love to answer your questions about our kittens.">
   <link rel="canonical" href="https://hollywoodcoon.com/contact.html">
   <link rel="preload" as="font" type="font/woff2" href="fonts/cormorant-garamond-regular.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="fonts/jost-regular.woff2" crossorigin>
@@ -16,8 +16,8 @@
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/pages/contact.css">
   <!-- Open Graph -->
-  <meta property="og:title" content="Contact | Hollywood Coon">
-  <meta property="og:description" content="[Contact page meta description placeholder]">
+  <meta property="og:title" content="Contact Hollywood Coon — Maine Coon Cattery Los Angeles">
+  <meta property="og:description" content="Contact Hollywood Coon Maine Coon cattery in Los Angeles. Email, phone, or send us a message. We'd love to answer your questions about our kittens.">
   <meta property="og:image" content="https://hollywoodcoon.com/assets/og-contact.jpg">
   <meta property="og:url" content="https://hollywoodcoon.com/contact.html">
   <meta property="og:type" content="website">
@@ -44,9 +44,25 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "LocalBusiness",
+        "name": "Hollywood Coon",
+        "telephone": "+1-424-555-0198",
+        "email": "hello@hollywoodcoon.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Los Angeles",
+          "addressLocality": "Los Angeles",
+          "addressRegion": "CA",
+          "postalCode": "90028",
+          "addressCountry": "US"
+        },
+        "openingHours": "Mo-Sa 10:00-19:00",
+        "url": "https://hollywoodcoon.com/"
+      },
+      {
         "@type": "ContactPage",
         "name": "Contact Hollywood Coon",
-        "description": "[Contact page description placeholder]",
+        "description": "Contact Hollywood Coon Maine Coon cattery in Los Angeles. Email, phone, or send us a message.",
         "url": "https://hollywoodcoon.com/contact.html"
       },
       {
@@ -93,7 +109,7 @@
               class="nav__toggle">
         <span aria-hidden="true">&#9776;</span>
       </button>
-      <ul id="nav-menu" role="list" data-nav-menu class="nav__menu" hidden
+      <ul id="nav-menu" role="list" data-nav-menu class="nav__menu" hidden>
           <li><a href="index.html" data-nav-link>Home</a></li>
           <li><a href="about.html" data-nav-link>About</a></li>
           <li><a href="gallery.html" data-nav-link>Gallery</a></li>
@@ -129,26 +145,26 @@
                           assets/hero-contact-1920.webp 1920w"
                   sizes="100vw">
           <img src="assets/hero-contact-1920.jpg"
-               alt="[Contact page hero image placeholder]"
+               alt="Contact Hollywood Coon Maine Coon cattery in Los Angeles"
                width="1920" height="1080"
                fetchpriority="high"
                decoding="async">
         </picture>
       <div class="hero__content">
-        <h1 id="contact-hero-heading" class="hero__title">[Contact Page Heading Placeholder]</h1>
-        <p class="hero__subtitle">[Contact page subheading placeholder]</p>
+        <h1 id="contact-hero-heading" class="hero__title">Contact Us</h1>
+        <p class="hero__subtitle">We'd love to hear from you — whether you have questions about our kittens or want to schedule a visit</p>
       </div>
     </section>
 
     <!-- CONTACT FORM + INFO -->
     <section class="section" aria-labelledby="contact-form-heading">
-      <h2 id="contact-form-heading" class="section__heading">[Contact form heading placeholder]</h2>
+      <h2 id="contact-form-heading" class="section__heading">Send Us a Message</h2>
       <div class="contact-layout">
         <!-- FORM -->
         <div>
           <form novalidate action="#" method="post">
             <div class="form-group">
-              <label for="name">[Name label placeholder]</label>
+              <label for="name">Your Name</label>
               <input type="text" id="name" name="name" required
                      autocomplete="name"
                      aria-describedby="name-error">
@@ -156,7 +172,7 @@
                     data-error="name"></span>
             </div>
             <div class="form-group">
-              <label for="email">[Email label placeholder]</label>
+              <label for="email">Email Address</label>
               <input type="email" id="email" name="email" required
                      autocomplete="email"
                      aria-describedby="email-error">
@@ -164,7 +180,7 @@
                     data-error="email"></span>
             </div>
             <div class="form-group">
-              <label for="phone">[Phone label placeholder]</label>
+              <label for="phone">Phone Number (optional)</label>
               <input type="tel" id="phone" name="phone"
                      autocomplete="tel"
                      aria-describedby="phone-error">
@@ -172,46 +188,47 @@
                     data-error="phone"></span>
             </div>
             <div class="form-group">
-              <label for="subject">[Subject label placeholder]</label>
-              <select id="subject" name="subject" required
-                      aria-describedby="subject-error">
-                <option value="">[Select a subject placeholder]</option>
-                <option value="kitten-inquiry">[Kitten inquiry placeholder]</option>
-                <option value="reservation">[Reservation placeholder]</option>
-                <option value="waitlist">[Waitlist placeholder]</option>
-                <option value="general">[General question placeholder]</option>
-              </select>
-              <span id="subject-error" class="form-error" role="alert" hidden
-                    data-error="subject"></span>
-            </div>
-            <div class="form-group">
-              <label for="message">[Message label placeholder]</label>
+              <label for="message">Message</label>
               <textarea id="message" name="message" required rows="6"
                         aria-describedby="message-error"></textarea>
               <span id="message-error" class="form-error" role="alert" hidden
                     data-error="message"></span>
             </div>
-            <button type="submit" class="btn btn-primary">[Submit label placeholder]</button>
+            <div class="form-group">
+              <label for="referral">How did you hear about us?</label>
+              <select id="referral" name="referral"
+                      aria-describedby="referral-error">
+                <option value="">Please select</option>
+                <option value="google">Google</option>
+                <option value="instagram">Instagram</option>
+                <option value="word-of-mouth">Word of Mouth</option>
+                <option value="cat-show">Cat Show</option>
+                <option value="other">Other</option>
+              </select>
+              <span id="referral-error" class="form-error" role="alert" hidden
+                    data-error="referral"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
           </form>
         </div>
 
         <!-- CONTACT INFO -->
         <div class="contact-info">
           <div class="contact-info__item">
-            <h3>[Email heading placeholder]</h3>
-            <p>[email@placeholder.com]</p>
+            <h3>Email</h3>
+            <p><a href="mailto:hello@hollywoodcoon.com">hello@hollywoodcoon.com</a></p>
           </div>
           <div class="contact-info__item">
-            <h3>[Phone heading placeholder]</h3>
-            <p>[+1 (000) 000-0000 placeholder]</p>
+            <h3>Phone</h3>
+            <p><a href="tel:+14245550198">(424) 555-0198</a></p>
           </div>
           <div class="contact-info__item">
-            <h3>[Location heading placeholder]</h3>
-            <p>[Location placeholder]</p>
+            <h3>Location</h3>
+            <p>Los Angeles, CA 90028</p>
           </div>
           <div class="contact-info__item">
-            <h3>[Hours heading placeholder]</h3>
-            <p>[Business hours placeholder]</p>
+            <h3>Hours</h3>
+            <p>Mon–Sat 10 AM – 7 PM PT</p>
           </div>
         </div>
       </div>
@@ -240,7 +257,7 @@
           <li><a href="404.html" class="footer__link">404</a></li>
         </ul>
       </nav>
-      <p class="footer__copy">[Copyright placeholder] Hollywood Coon. [All rights reserved placeholder].</p>
+      <p class="footer__copy">&copy; 2026 Hollywood Coon. All rights reserved.</p>
     </div>
   </footer>
 
