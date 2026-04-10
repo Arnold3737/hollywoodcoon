@@ -1,6 +1,7 @@
 /*
   Hollywood Coon — Service Worker
-  Cache-First for static assets, Network-First for HTML
+  Cache-First for images & fonts, Network-First for HTML,
+  Stale-While-Revalidate for CSS & JS
 
   Cloudflare setup:
   - Speed > Optimization > HTTP/3 (QUIC) = ON
@@ -8,7 +9,7 @@
   - Caching > Cache Rules: Cache Everything for /css/* /js/* /fonts/*
 */
 
-const CACHE_VERSION = 'v3-20260410';
+const CACHE_VERSION = 'v3-2026-04-10';
 const STATIC_CACHE = `static-${CACHE_VERSION}`;
 const HTML_CACHE = `html-${CACHE_VERSION}`;
 
@@ -34,7 +35,9 @@ const STATIC_ASSETS = [
   'css/pages/404.css',
   'js/nav.js',
   'js/lightbox.js',
-  'js/form.js'
+  'js/form.js',
+  'fonts/cormorant-garamond-regular.woff2',
+  'fonts/jost-regular.woff2'
 ];
 
 self.addEventListener('install', (e) => {
@@ -59,6 +62,7 @@ self.addEventListener('activate', (e) => {
 
 self.addEventListener('fetch', (e) => {
   const { request } = e;
+  const url = new URL(request.url);
 
   if (request.destination === 'document') {
     /* === Network-First for HTML === */
@@ -70,10 +74,36 @@ self.addEventListener('fetch', (e) => {
         })
         .catch(() => caches.match(request))
     );
-  } else {
-    /* === Cache-First for static assets === */
+  } else if (
+    request.destination === 'image' ||
+    url.pathname.startsWith('/fonts/') ||
+    /\.(avif|webp|jpg|jpeg|woff2)$/i.test(url.pathname)
+  ) {
+    /* === Cache-First for images & fonts === */
     e.respondWith(
-      caches.match(request).then(r => r || fetch(request))
+      caches.match(request).then(r => r || fetch(request).then(resp => {
+        caches.open(STATIC_CACHE).then(c => c.put(request, resp.clone()));
+        return resp;
+      }))
+    );
+  } else if (
+    url.pathname.startsWith('/css/') ||
+    url.pathname.startsWith('/js/')
+  ) {
+    /* === Stale-While-Revalidate for CSS & JS === */
+    e.respondWith(
+      caches.match(request).then(cached => {
+        const fetched = fetch(request).then(resp => {
+          caches.open(STATIC_CACHE).then(c => c.put(request, resp.clone()));
+          return resp;
+        });
+        return cached || fetched;
+      })
+    );
+  } else {
+    /* === Default: Network with cache fallback === */
+    e.respondWith(
+      fetch(request).catch(() => caches.match(request))
     );
   }
 });
