@@ -8,7 +8,7 @@
   - Caching > Cache Rules: Cache Everything for /css/* /js/* /fonts/*
 */
 
-const CACHE_VERSION = 'v1';
+const CACHE_VERSION = 'v3-20260410';
 const STATIC_CACHE = `static-${CACHE_VERSION}`;
 const HTML_CACHE = `html-${CACHE_VERSION}`;
 
@@ -16,6 +16,22 @@ const STATIC_ASSETS = [
   'css/variables.css',
   'css/base.css',
   'css/components.css',
+  'css/pages/index.css',
+  'css/pages/kittens.css',
+  'css/pages/kitten-detail.css',
+  'css/pages/gallery.css',
+  'css/pages/our-cats.css',
+  'css/pages/about.css',
+  'css/pages/contact.css',
+  'css/pages/faq.css',
+  'css/pages/health-testing.css',
+  'css/pages/shipping.css',
+  'css/pages/waiting-list.css',
+  'css/pages/purchase-contract.css',
+  'css/pages/privacy-policy.css',
+  'css/pages/terms-of-sale.css',
+  'css/pages/cookie-policy.css',
+  'css/pages/404.css',
   'js/nav.js',
   'js/lightbox.js',
   'js/form.js'
