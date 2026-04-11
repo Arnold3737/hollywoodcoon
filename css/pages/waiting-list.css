@@ -6,13 +6,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--space-12);
-    align-items: start;
   }
 
   .waiting-layout > :last-child {
     overflow: hidden;
     border-radius: var(--radius-lg, 8px);
-    height: 100%;
     min-height: 0;
   }
 
