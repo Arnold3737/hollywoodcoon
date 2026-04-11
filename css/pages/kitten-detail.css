@@ -33,6 +33,12 @@
     border-radius: var(--radius-lg);
   }
 
+  /* Aurora's photo needs a centered crop — the shared 25% top-bias
+     cuts off too much of the kitten on this particular image. */
+  .gallery--aurora img {
+    object-position: center;
+  }
+
   /* === KITTEN INFO === */
   .kitten-detail__info {
     padding: var(--space-6);
