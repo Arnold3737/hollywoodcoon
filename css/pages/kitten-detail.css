@@ -19,11 +19,16 @@
   .kitten-detail__gallery {
     display: grid;
     gap: var(--space-4);
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
   }
 
   .kitten-detail__gallery img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
     display: block;
     border-radius: var(--radius-lg);
   }
