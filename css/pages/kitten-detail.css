@@ -21,6 +21,13 @@
     gap: var(--space-4);
   }
 
+  .kitten-detail__gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius-lg);
+  }
+
   /* === KITTEN INFO === */
   .kitten-detail__info {
     padding: var(--space-6);
