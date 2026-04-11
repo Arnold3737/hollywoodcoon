@@ -8,9 +8,26 @@
     gap: var(--space-12);
   }
 
+  .waiting-layout > :last-child {
+    overflow: hidden;
+    border-radius: var(--radius-lg, 8px);
+    height: 100%;
+  }
+
+  .waiting-layout > :last-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   @media (max-width: 768px) {
     .waiting-layout {
       grid-template-columns: 1fr;
+    }
+
+    .waiting-layout > :last-child {
+      height: auto;
+      aspect-ratio: 16 / 9;
     }
   }
 
