@@ -2,7 +2,7 @@
   "name": "Hollywood Coon",
   "short_name": "HW Coon",
   "description": "Premium Maine Coon cattery in Los Angeles. TICA registered. Kittens available.",
-  "start_url": "/",
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#1a1a2e",
   "background_color": "#faf9f6",

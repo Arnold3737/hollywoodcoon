@@ -9,9 +9,12 @@
   - Caching > Cache Rules: Cache Everything for /css/* /js/* /fonts/*
 */
 
-const CACHE_VERSION = 'v3-2026-04-10';
+const CACHE_VERSION = 'v4-2026-04-11';
 const STATIC_CACHE = `static-${CACHE_VERSION}`;
 const HTML_CACHE = `html-${CACHE_VERSION}`;
+
+/* Derive base path from SW scope so caching works on any subpath (e.g. /hollywoodcoon/) */
+const BASE = new URL('.', self.location).pathname;
 
 const STATIC_ASSETS = [
   'css/variables.css',
@@ -76,7 +79,7 @@ self.addEventListener('fetch', (e) => {
     );
   } else if (
     request.destination === 'image' ||
-    url.pathname.startsWith('/fonts/') ||
+    url.pathname.startsWith(BASE + 'fonts/') ||
     /\.(avif|webp|jpg|jpeg|woff2)$/i.test(url.pathname)
   ) {
     /* === Cache-First for images & fonts === */
@@ -87,8 +90,8 @@ self.addEventListener('fetch', (e) => {
       }))
     );
   } else if (
-    url.pathname.startsWith('/css/') ||
-    url.pathname.startsWith('/js/')
+    url.pathname.startsWith(BASE + 'css/') ||
+    url.pathname.startsWith(BASE + 'js/')
   ) {
     /* === Stale-While-Revalidate for CSS & JS === */
     e.respondWith(
