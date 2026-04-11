@@ -31,6 +31,15 @@ if (!('scheduler' in globalThis)) { globalThis.scheduler = { yield: () => Promis
       if (valid) {
         const status = document.getElementById('form-status');
         const btn = form.querySelector('[type="submit"]');
+
+        /* Guard: block submit when the form action is still a placeholder.
+           Becomes inert once a real Formspree ID replaces XXXXXXXX. */
+        if (/\/X{4,}$/.test(new URL(form.action, location.href).pathname)) {
+          status.textContent =
+            'Our contact form is not yet connected. Please email us directly at hello@hollywoodcoon.com.';
+          return;
+        }
+
         btn.disabled = true;
         await scheduler.yield();
         try {
