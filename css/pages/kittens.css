@@ -29,4 +29,10 @@
     gap: var(--space-4);
     margin-bottom: var(--space-8);
   }
+
+  .kittens-filter__btn--active {
+    background: var(--color-primary);
+    color: var(--color-bg);
+    border-color: var(--color-primary);
+  }
 }

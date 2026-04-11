@@ -159,16 +159,16 @@
     <!-- FILTER BAR -->
     <section class="section" aria-labelledby="kittens-catalog-heading">
       <h2 id="kittens-catalog-heading" class="section__heading">Our Kittens</h2>
-      <div class="kittens-filter">
-        <a href="kittens.html" class="btn btn-secondary">All</a>
-        <a href="kittens.html?status=available" class="btn btn-secondary">Available</a>
-        <a href="kittens.html?status=reserved" class="btn btn-secondary">Reserved</a>
+      <div class="kittens-filter" role="group" aria-label="Filter kittens by status">
+        <a href="kittens.html" class="btn btn-secondary kittens-filter__btn" data-filter="">All</a>
+        <a href="kittens.html?status=available" class="btn btn-secondary kittens-filter__btn" data-filter="available">Available</a>
+        <a href="kittens.html?status=reserved" class="btn btn-secondary kittens-filter__btn" data-filter="reserved">Reserved</a>
       </div>
 
       <!-- KITTENS GRID -->
       <div class="kittens-grid">
 
-        <a href="kitten-detail-1.html" class="card">
+        <a href="kitten-detail-1.html" class="card" data-status="available">
           <div class="card__image-wrap">
         <picture>
           <source type="image/avif"
@@ -193,7 +193,7 @@
             <p class="card__text">Female · Blue Smoke · Born Mar 15, 2026 · $2,200</p>
           </div>
         </a>
-        <a href="kitten-detail-2.html" class="card">
+        <a href="kitten-detail-2.html" class="card" data-status="reserved">
           <div class="card__image-wrap">
         <picture>
           <source type="image/avif"
@@ -218,7 +218,7 @@
             <p class="card__text">Male · Brown Classic Tabby · Born Feb 28, 2026 · $2,000</p>
           </div>
         </a>
-        <a href="kitten-detail-3.html" class="card">
+        <a href="kitten-detail-3.html" class="card" data-status="available">
           <div class="card__image-wrap">
         <picture>
           <source type="image/avif"
@@ -243,7 +243,7 @@
             <p class="card__text">Female · Silver Tabby · Born Mar 15, 2026 · $2,200</p>
           </div>
         </a>
-        <a href="kitten-detail-4.html" class="card">
+        <a href="kitten-detail-4.html" class="card" data-status="available">
           <div class="card__image-wrap">
         <picture>
           <source type="image/avif"
@@ -268,7 +268,7 @@
             <p class="card__text">Male · Black Smoke · Born Feb 28, 2026 · $2,000</p>
           </div>
         </a>
-        <a href="kitten-detail-5.html" class="card">
+        <a href="kitten-detail-5.html" class="card" data-status="available">
           <div class="card__image-wrap">
         <picture>
           <source type="image/avif"
@@ -293,7 +293,7 @@
             <p class="card__text">Female · Blue Tabby · Born Apr 1, 2026 · $2,400</p>
           </div>
         </a>
-        <a href="kitten-detail-6.html" class="card">
+        <a href="kitten-detail-6.html" class="card" data-status="available">
           <div class="card__image-wrap">
         <picture>
           <source type="image/avif"
@@ -361,6 +361,27 @@
   </footer>
 
   <script src="js/nav.js" defer></script>
+  <script>
+    (function() {
+      'use strict';
+      var status = new URLSearchParams(location.search).get('status') || '';
+      var cards = document.querySelectorAll('.kittens-grid .card[data-status]');
+      var btns = document.querySelectorAll('.kittens-filter__btn[data-filter]');
+
+      cards.forEach(function(card) {
+        if (status && card.getAttribute('data-status') !== status) {
+          card.hidden = true;
+        }
+      });
+
+      btns.forEach(function(btn) {
+        if (btn.getAttribute('data-filter') === status) {
+          btn.classList.add('kittens-filter__btn--active');
+          btn.setAttribute('aria-current', 'true');
+        }
+      });
+    })();
+  </script>
   <script defer>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js');
