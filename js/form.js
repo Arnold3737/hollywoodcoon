@@ -35,8 +35,8 @@ if (!('scheduler' in globalThis)) { globalThis.scheduler = { yield: () => Promis
         /* Guard: block submit when the form action is still a placeholder.
            Becomes inert once a real Formspree ID replaces XXXXXXXX. */
         if (/\/X{4,}$/.test(new URL(form.action, location.href).pathname)) {
-          status.textContent =
-            'Our contact form is not yet connected. Please email us directly at hello@hollywoodcoon.com.';
+          status.innerHTML =
+            'Our contact form is not yet connected. Please email us directly at <a href="mailto:hello@hollywoodcoon.com">hello@hollywoodcoon.com</a>.';
           return;
         }
 
