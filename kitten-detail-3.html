@@ -151,7 +151,8 @@
     <section class="section" aria-labelledby="kitten-name-heading">
       <div class="kitten-detail">
         <!-- GALLERY -->
-        <div class="kitten-detail__gallery">
+        <div class="kitten-detail__gallery"
+             data-gallery-images='[{"srcsetAvif":"assets/kitten-3-640.avif 640w, assets/kitten-3-1024.avif 1024w, assets/kitten-3-1920.avif 1920w","srcsetWebp":"assets/kitten-3-640.webp 640w, assets/kitten-3-1024.webp 1024w, assets/kitten-3-1920.webp 1920w","srcFallback":"assets/kitten-3-1920.jpg","src640":"assets/kitten-3-640.webp","alt":"Luna Silver Tabby Maine Coon kitten detail photo"}]'>
         <picture>
           <source type="image/avif"
                   srcset="assets/kitten-3-640.avif 640w,
@@ -250,6 +251,12 @@
       </div>
       <a href="our-cats.html" class="btn btn-secondary">Meet the Parents</a>
     </section>
+    <!-- LIGHTBOX DIALOG (reused by gallery JS) -->
+    <dialog id="lightbox-dialog" class="lightbox">
+      <picture>
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Enlarged kitten photo" width="1920" height="1434">
+      </picture>
+    </dialog>
   </main>
 
   <!-- FOOTER -->
@@ -278,6 +285,8 @@
   </footer>
 
   <script src="js/nav.js" defer></script>
+  <script src="js/lightbox.js" defer></script>
+  <script src="js/kitten-gallery.js" defer></script>
   <script defer>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js');
