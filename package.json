@@ -4,7 +4,9 @@
   "description": "",
   "main": "sw.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "add-kitten": "node scripts/add-kitten.js",
+    "convert-images": "node scripts/convert-images.js"
   },
   "keywords": [],
   "author": "",
