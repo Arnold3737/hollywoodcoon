@@ -8,7 +8,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/icon-192.png">
   <meta name="description" content="Meet the Maine Coon breeding cats of Hollywood Coon — TICA champions and health-tested parents of our kittens. Atlas, Elara, and more.">
-  <link rel="canonical" href="https://hollywoodcoon.com/our-cats.html">
+  <link rel="canonical" href="https://arnold3737.github.io/hollywoodcoon/our-cats.html">
   <link rel="preload" as="font" type="font/woff2" href="fonts/cormorant-garamond-regular.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="fonts/jost-regular.woff2" crossorigin>
   <link rel="stylesheet" href="css/variables.css">
@@ -18,8 +18,8 @@
   <!-- Open Graph -->
   <meta property="og:title" content="Our Cats — Hollywood Coon Maine Coon Cattery">
   <meta property="og:description" content="Meet the Maine Coon breeding cats of Hollywood Coon — TICA champions and health-tested parents of our kittens. Atlas, Elara, and more.">
-  <meta property="og:image" content="https://hollywoodcoon.com/assets/og-our-cats.jpg">
-  <meta property="og:url" content="https://hollywoodcoon.com/our-cats.html">
+  <meta property="og:image" content="https://arnold3737.github.io/hollywoodcoon/assets/og-our-cats.jpg">
+  <meta property="og:url" content="https://arnold3737.github.io/hollywoodcoon/our-cats.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <!-- PWA -->
@@ -46,7 +46,7 @@
       {
         "@type": "Organization",
         "name": "Hollywood Coon",
-        "url": "https://hollywoodcoon.com",
+        "url": "https://arnold3737.github.io/hollywoodcoon",
         "description": "Meet the breeding cats of Hollywood Coon — TICA champion Maine Coons, fully health-tested."
       },
       {
@@ -56,37 +56,20 @@
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://hollywoodcoon.com/"
+            "item": "https://arnold3737.github.io/hollywoodcoon/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Our Cats",
-            "item": "https://hollywoodcoon.com/our-cats.html"
+            "item": "https://arnold3737.github.io/hollywoodcoon/our-cats.html"
           }
         ]
       }
     ]
   }
   </script>
-  <!-- Speculation Rules -->
-  <script type="speculationrules">
-  {
-    "prerender": [
-      {
-        "where": { "href_matches": "/kittens.html" },
-        "eagerness": "moderate"
-      },
-      {
-        "where": { "href_matches": "/kitten-detail-1.html" },
-        "eagerness": "moderate"
-      }
-    ]
-  }
-  </script>
-<!-- Cloudflare Web Analytics -->
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "CLOUDFLARE_TOKEN_PLACEHOLDER"}'></script>
-</head>
+  <!-- Speculation Rules --></head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -136,12 +119,7 @@
                           assets/hero-our-cats-1024.webp 1024w,
                           assets/hero-our-cats-1920.webp 1920w"
                   sizes="100vw">
-          <img src="assets/hero-our-cats-1920.jpg"
-               alt="Hollywood Coon breeding Maine Coon cats"
-               width="1920" height="1080"
-               fetchpriority="high"
-               loading="eager"
-               decoding="async">
+          <img src="assets/hero-our-cats-1920.jpg" alt="Hollywood Coon breeding Maine Coon cats" width="1920" height="1072" fetchpriority="high" loading="eager" decoding="async">
         </picture>
       <div class="hero__content">
         <h1 id="our-cats-hero-heading" class="hero__title">Our Cats</h1>
@@ -167,10 +145,7 @@
                           assets/cat-atlas-1024.webp 1024w,
                           assets/cat-atlas-1920.webp 1920w"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw">
-          <img src="assets/cat-atlas-1920.jpg"
-               alt="Atlas — Brown Classic Tabby Maine Coon champion male at Hollywood Coon cattery"
-               width="1920" height="1080"
-               loading="lazy">
+          <img src="assets/cat-atlas-1920.jpg" alt="Atlas — Brown Classic Tabby Maine Coon champion male at Hollywood Coon cattery" width="1920" height="1920" loading="lazy">
         </picture>
           </div>
           <div class="card__body">
@@ -197,10 +172,7 @@
                           assets/cat-elara-1024.webp 1024w,
                           assets/cat-elara-1920.webp 1920w"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw">
-          <img src="assets/cat-elara-1920.jpg"
-               alt="Elara — Blue Smoke Maine Coon female, mother of Hollywood Coon kittens"
-               width="1920" height="1080"
-               loading="lazy">
+          <img src="assets/cat-elara-1920.jpg" alt="Elara — Blue Smoke Maine Coon female, mother of Hollywood Coon kittens" width="1920" height="1072" loading="lazy">
         </picture>
           </div>
           <div class="card__body">
@@ -258,11 +230,6 @@
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js');
     }
-  </script>
-  <script type="module" defer>
-    import {onLCP,onINP,onCLS,onFCP,onTTFB} from 'https://unpkg.com/web-vitals@3/dist/web-vitals.attribution.js';
-    const report = ({name,value,rating}) => console.log(`[CWV] ${name}: ${Math.round(value)} (${rating})`);
-    onLCP(report); onINP(report); onCLS(report); onFCP(report); onTTFB(report);
   </script>
 </body>
 </html>

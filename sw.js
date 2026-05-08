@@ -9,7 +9,9 @@
   - Caching > Cache Rules: Cache Everything for /css/* /js/* /fonts/*
 */
 
-const CACHE_VERSION = 'v4-2026-04-11';
+// CACHE_VERSION is replaced at deploy time by GitHub Actions with the commit SHA.
+// Locally / before CI runs, the placeholder remains and triggers a single cache namespace.
+const CACHE_VERSION = '__COMMIT_SHA__';
 const STATIC_CACHE = `static-${CACHE_VERSION}`;
 const HTML_CACHE = `html-${CACHE_VERSION}`;
 

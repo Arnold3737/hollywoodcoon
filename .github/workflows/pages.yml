@@ -3,19 +3,36 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+
+      - name: Inject commit SHA into service worker cache version
+        run: |
+          SHORT_SHA="${GITHUB_SHA::8}"
+          echo "Replacing __COMMIT_SHA__ with v-${SHORT_SHA}"
+          sed -i "s/__COMMIT_SHA__/v-${SHORT_SHA}/g" sw.js
+          grep -n "CACHE_VERSION" sw.js | head -3
+
       - uses: actions/configure-pages@v4
       - uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
-      - uses: actions/deploy-pages@v4
+      - id: deployment
+        uses: actions/deploy-pages@v4

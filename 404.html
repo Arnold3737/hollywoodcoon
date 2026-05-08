@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="robots" content="noindex,follow">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page Not Found | Hollywood Coon</title>
@@ -8,7 +9,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/icon-192.png">
   <meta name="description" content="The page you are looking for does not exist or has been moved. Return to Hollywood Coon or browse our available Maine Coon kittens.">
-  <link rel="canonical" href="https://hollywoodcoon.com/404.html">
+  <link rel="canonical" href="https://arnold3737.github.io/hollywoodcoon/404.html">
   <link rel="preload" as="font" type="font/woff2" href="fonts/cormorant-garamond-regular.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="fonts/jost-regular.woff2" crossorigin>
   <link rel="stylesheet" href="css/variables.css">
@@ -18,8 +19,8 @@
   <!-- Open Graph -->
   <meta property="og:title" content="Page Not Found | Hollywood Coon">
   <meta property="og:description" content="The page you are looking for does not exist or has been moved.">
-  <meta property="og:image" content="https://hollywoodcoon.com/assets/og-404.jpg">
-  <meta property="og:url" content="https://hollywoodcoon.com/404.html">
+  <meta property="og:image" content="https://arnold3737.github.io/hollywoodcoon/assets/og-404.jpg">
+  <meta property="og:url" content="https://arnold3737.github.io/hollywoodcoon/404.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <!-- PWA -->
@@ -45,27 +46,10 @@
     "@type": "WebPage",
     "name": "Page Not Found — Hollywood Coon",
     "description": "The page you are looking for does not exist or has been moved.",
-    "url": "https://hollywoodcoon.com/404.html"
+    "url": "https://arnold3737.github.io/hollywoodcoon/404.html"
   }
   </script>
-  <!-- Speculation Rules -->
-  <script type="speculationrules">
-  {
-    "prerender": [
-      {
-        "where": { "href_matches": "/kittens.html" },
-        "eagerness": "moderate"
-      },
-      {
-        "where": { "href_matches": "/kitten-detail-1.html" },
-        "eagerness": "moderate"
-      }
-    ]
-  }
-  </script>
-<!-- Cloudflare Web Analytics -->
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "CLOUDFLARE_TOKEN_PLACEHOLDER"}'></script>
-</head>
+  <!-- Speculation Rules --></head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -137,11 +121,6 @@
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js');
     }
-  </script>
-  <script type="module" defer>
-    import {onLCP,onINP,onCLS,onFCP,onTTFB} from 'https://unpkg.com/web-vitals@3/dist/web-vitals.attribution.js';
-    const report = ({name,value,rating}) => console.log(`[CWV] ${name}: ${Math.round(value)} (${rating})`);
-    onLCP(report); onINP(report); onCLS(report); onFCP(report); onTTFB(report);
   </script>
 </body>
 </html>

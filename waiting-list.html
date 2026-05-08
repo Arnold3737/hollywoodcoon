@@ -8,7 +8,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/icon-192.png">
   <meta name="description" content="Join the Hollywood Coon waiting list for upcoming Maine Coon litters. Submit your interest, secure your spot with a $500 deposit, and we'll match you with the perfect kitten.">
-  <link rel="canonical" href="https://hollywoodcoon.com/waiting-list.html">
+  <link rel="canonical" href="https://arnold3737.github.io/hollywoodcoon/waiting-list.html">
   <link rel="preload" as="font" type="font/woff2" href="fonts/cormorant-garamond-regular.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="fonts/jost-regular.woff2" crossorigin>
   <link rel="stylesheet" href="css/variables.css">
@@ -18,8 +18,8 @@
   <!-- Open Graph -->
   <meta property="og:title" content="Join the Waiting List | Hollywood Coon Maine Coon Kittens">
   <meta property="og:description" content="Join the Hollywood Coon waiting list for upcoming Maine Coon litters. Submit your interest, secure your spot with a $500 deposit, and we'll match you with the perfect kitten.">
-  <meta property="og:image" content="https://hollywoodcoon.com/assets/og-waiting-list.jpg">
-  <meta property="og:url" content="https://hollywoodcoon.com/waiting-list.html">
+  <meta property="og:image" content="https://arnold3737.github.io/hollywoodcoon/assets/og-waiting-list.jpg">
+  <meta property="og:url" content="https://arnold3737.github.io/hollywoodcoon/waiting-list.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <!-- PWA -->
@@ -47,7 +47,7 @@
         "@type": "WebPage",
         "name": "Waiting List — Hollywood Coon",
         "description": "Join the Hollywood Coon waiting list for upcoming Maine Coon litters. Submit your interest and secure your spot with a $500 deposit.",
-        "url": "https://hollywoodcoon.com/waiting-list.html"
+        "url": "https://arnold3737.github.io/hollywoodcoon/waiting-list.html"
       },
       {
         "@type": "BreadcrumbList",
@@ -56,37 +56,20 @@
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://hollywoodcoon.com/"
+            "item": "https://arnold3737.github.io/hollywoodcoon/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Waiting List",
-            "item": "https://hollywoodcoon.com/waiting-list.html"
+            "item": "https://arnold3737.github.io/hollywoodcoon/waiting-list.html"
           }
         ]
       }
     ]
   }
   </script>
-  <!-- Speculation Rules -->
-  <script type="speculationrules">
-  {
-    "prerender": [
-      {
-        "where": { "href_matches": "/kittens.html" },
-        "eagerness": "moderate"
-      },
-      {
-        "where": { "href_matches": "/kitten-detail-1.html" },
-        "eagerness": "moderate"
-      }
-    ]
-  }
-  </script>
-<!-- Cloudflare Web Analytics -->
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "CLOUDFLARE_TOKEN_PLACEHOLDER"}'></script>
-</head>
+  <!-- Speculation Rules --></head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -136,12 +119,7 @@
                           assets/hero-waiting-1024.webp 1024w,
                           assets/hero-waiting-1920.webp 1920w"
                   sizes="100vw">
-          <img src="assets/hero-waiting-1920.jpg"
-               alt="Join the Hollywood Coon Maine Coon kitten waiting list"
-               width="1920" height="1080"
-               fetchpriority="high"
-               loading="eager"
-               decoding="async">
+          <img src="assets/hero-waiting-1920.jpg" alt="Join the Hollywood Coon Maine Coon kitten waiting list" width="1920" height="1072" fetchpriority="high" loading="eager" decoding="async">
         </picture>
       <div class="hero__content">
         <h1 id="waiting-hero-heading" class="hero__title">Join Our Waiting List</h1>
@@ -198,10 +176,7 @@
                           assets/hero-waiting-1024.webp 1024w,
                           assets/hero-waiting-1920.webp 1920w"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw">
-          <img src="assets/hero-waiting-1920.jpg"
-               alt="Maine Coon kitten from Hollywood Coon cattery"
-               width="1920" height="1080"
-               loading="lazy">
+          <img src="assets/hero-waiting-1920.jpg" alt="Maine Coon kitten from Hollywood Coon cattery" width="1920" height="1072" loading="lazy">
         </picture>
         </div>
       </div>
@@ -220,7 +195,7 @@
       <div>
         <form novalidate action="https://formspree.io/f/XXXXXXXX" method="POST">
           <input type="text" name="_gotcha" style="display:none" tabindex="-1">
-          <input type="hidden" name="_next" value="https://hollywoodcoon.com/waiting-list.html?sent=1">
+          <input type="hidden" name="_next" value="https://arnold3737.github.io/hollywoodcoon/waiting-list.html?sent=1">
           <input type="hidden" name="_subject" value="New waiting list request — Hollywood Coon">
           <div class="form-group">
             <label for="name">Your Name</label>
@@ -291,11 +266,6 @@
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js');
     }
-  </script>
-  <script type="module" defer>
-    import {onLCP,onINP,onCLS,onFCP,onTTFB} from 'https://unpkg.com/web-vitals@3/dist/web-vitals.attribution.js';
-    const report = ({name,value,rating}) => console.log(`[CWV] ${name}: ${Math.round(value)} (${rating})`);
-    onLCP(report); onINP(report); onCLS(report); onFCP(report); onTTFB(report);
   </script>
 </body>
 </html>

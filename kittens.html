@@ -8,7 +8,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/icon-192.png">
   <meta name="description" content="Browse available Maine Coon kittens at Hollywood Coon. TICA-registered, health-tested, champion bloodlines. Kittens from $2,000. Los Angeles cattery.">
-  <link rel="canonical" href="https://hollywoodcoon.com/kittens.html">
+  <link rel="canonical" href="https://arnold3737.github.io/hollywoodcoon/kittens.html">
   <link rel="preload" as="font" type="font/woff2" href="fonts/cormorant-garamond-regular.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="fonts/jost-regular.woff2" crossorigin>
   <link rel="stylesheet" href="css/variables.css">
@@ -18,8 +18,8 @@
   <!-- Open Graph -->
   <meta property="og:title" content="Available Maine Coon Kittens — Hollywood Coon">
   <meta property="og:description" content="Browse available Maine Coon kittens at Hollywood Coon. TICA-registered, health-tested, champion bloodlines. Kittens from $2,000. Los Angeles cattery.">
-  <meta property="og:image" content="https://hollywoodcoon.com/assets/og-kittens.jpg">
-  <meta property="og:url" content="https://hollywoodcoon.com/kittens.html">
+  <meta property="og:image" content="https://arnold3737.github.io/hollywoodcoon/assets/og-kittens.jpg">
+  <meta property="og:url" content="https://arnold3737.github.io/hollywoodcoon/kittens.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <!-- PWA -->
@@ -47,15 +47,15 @@
         "@type": "ItemList",
         "name": "Available Maine Coon Kittens",
         "description": "Browse available Maine Coon kittens at Hollywood Coon cattery in Los Angeles.",
-        "url": "https://hollywoodcoon.com/kittens.html",
+        "url": "https://arnold3737.github.io/hollywoodcoon/kittens.html",
         "numberOfItems": 6,
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Aurora — Blue Smoke Female", "url": "https://hollywoodcoon.com/kitten-detail-1.html" },
-          { "@type": "ListItem", "position": 2, "name": "Titan — Brown Classic Tabby Male", "url": "https://hollywoodcoon.com/kitten-detail-2.html" },
-          { "@type": "ListItem", "position": 3, "name": "Luna — Silver Tabby Female", "url": "https://hollywoodcoon.com/kitten-detail-3.html" },
-          { "@type": "ListItem", "position": 4, "name": "Thor — Black Smoke Male", "url": "https://hollywoodcoon.com/kitten-detail-4.html" },
-          { "@type": "ListItem", "position": 5, "name": "Stella — Blue Tabby Female", "url": "https://hollywoodcoon.com/kitten-detail-5.html" },
-          { "@type": "ListItem", "position": 6, "name": "Caspian — Red Mackerel Tabby Male", "url": "https://hollywoodcoon.com/kitten-detail-6.html" }
+          { "@type": "ListItem", "position": 1, "name": "Aurora — Blue Smoke Female", "url": "https://arnold3737.github.io/hollywoodcoon/kitten-detail-1.html" },
+          { "@type": "ListItem", "position": 2, "name": "Titan — Brown Classic Tabby Male", "url": "https://arnold3737.github.io/hollywoodcoon/kitten-detail-2.html" },
+          { "@type": "ListItem", "position": 3, "name": "Luna — Silver Tabby Female", "url": "https://arnold3737.github.io/hollywoodcoon/kitten-detail-3.html" },
+          { "@type": "ListItem", "position": 4, "name": "Thor — Black Smoke Male", "url": "https://arnold3737.github.io/hollywoodcoon/kitten-detail-4.html" },
+          { "@type": "ListItem", "position": 5, "name": "Stella — Blue Tabby Female", "url": "https://arnold3737.github.io/hollywoodcoon/kitten-detail-5.html" },
+          { "@type": "ListItem", "position": 6, "name": "Caspian — Red Mackerel Tabby Male", "url": "https://arnold3737.github.io/hollywoodcoon/kitten-detail-6.html" }
         ]
       },
       {
@@ -65,13 +65,13 @@
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://hollywoodcoon.com/"
+            "item": "https://arnold3737.github.io/hollywoodcoon/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Available Kittens",
-            "item": "https://hollywoodcoon.com/kittens.html"
+            "item": "https://arnold3737.github.io/hollywoodcoon/kittens.html"
           }
         ]
       }
@@ -83,18 +83,14 @@
   {
     "prerender": [
       {
-        "where": { "href_matches": "/kittens.html" },
-        "eagerness": "moderate"
-      },
-      {
-        "where": { "href_matches": "/kitten-detail-1.html" },
+        "where": {
+          "href_matches": "/kitten-detail-*.html"
+        },
         "eagerness": "moderate"
       }
     ]
   }
   </script>
-<!-- Cloudflare Web Analytics -->
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "CLOUDFLARE_TOKEN_PLACEHOLDER"}'></script>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -145,12 +141,7 @@
                           assets/hero-kittens-1024.webp 1024w,
                           assets/hero-kittens-1920.webp 1920w"
                   sizes="100vw">
-          <img src="assets/hero-kittens-1920.jpg"
-               alt="Maine Coon kittens available at Hollywood Coon cattery"
-               width="1920" height="1080"
-               fetchpriority="high"
-               loading="eager"
-               decoding="async">
+          <img src="assets/hero-kittens-1920.jpg" alt="Maine Coon kittens available at Hollywood Coon cattery" width="1920" height="1920" fetchpriority="high" loading="eager" decoding="async">
         </picture>
       <div class="hero__content">
         <h1 id="kittens-hero-heading" class="hero__title">Available Kittens</h1>
@@ -183,10 +174,7 @@
                           assets/kitten-1-1024.webp 1024w,
                           assets/kitten-1-1920.webp 1920w"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw">
-          <img src="assets/kitten-1-1920.jpg"
-               alt="Aurora — Blue Smoke Maine Coon female kitten, available"
-               width="1920" height="1080"
-               loading="lazy">
+          <img src="assets/kitten-1-1920.jpg" alt="Aurora — Blue Smoke Maine Coon female kitten, available" width="1920" height="1434" loading="lazy">
         </picture>
           </div>
           <div class="card__body">
@@ -208,10 +196,7 @@
                           assets/kitten-2-1024.webp 1024w,
                           assets/kitten-2-1920.webp 1920w"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw">
-          <img src="assets/kitten-2-1920.jpg"
-               alt="Titan — Brown Tabby Maine Coon male kitten, reserved"
-               width="1920" height="1080"
-               loading="lazy">
+          <img src="assets/kitten-2-1920.jpg" alt="Titan — Brown Tabby Maine Coon male kitten, reserved" width="1920" height="1434" loading="lazy">
         </picture>
           </div>
           <div class="card__body">
@@ -233,10 +218,7 @@
                           assets/kitten-3-1024.webp 1024w,
                           assets/kitten-3-1920.webp 1920w"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw">
-          <img src="assets/kitten-3-1920.jpg"
-               alt="Luna — Silver Tabby Maine Coon female kitten"
-               width="1920" height="1080"
-               loading="lazy">
+          <img src="assets/kitten-3-1920.jpg" alt="Luna — Silver Tabby Maine Coon female kitten" width="1920" height="1434" loading="lazy">
         </picture>
           </div>
           <div class="card__body">
@@ -258,10 +240,7 @@
                           assets/kitten-4-1024.webp 1024w,
                           assets/kitten-4-1920.webp 1920w"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw">
-          <img src="assets/kitten-4-1920.jpg"
-               alt="Thor — Black Smoke Maine Coon male kitten"
-               width="1920" height="1080"
-               loading="lazy">
+          <img src="assets/kitten-4-1920.jpg" alt="Thor — Black Smoke Maine Coon male kitten" width="1920" height="1434" loading="lazy">
         </picture>
           </div>
           <div class="card__body">
@@ -283,10 +262,7 @@
                           assets/kitten-5-1024.webp 1024w,
                           assets/kitten-5-1920.webp 1920w"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw">
-          <img src="assets/kitten-5-1920.jpg"
-               alt="Stella — Blue Tabby Maine Coon female kitten"
-               width="1920" height="1080"
-               loading="lazy">
+          <img src="assets/kitten-5-1920.jpg" alt="Stella — Blue Tabby Maine Coon female kitten" width="1920" height="1434" loading="lazy">
         </picture>
           </div>
           <div class="card__body">
@@ -308,10 +284,7 @@
                           assets/kitten-6-1024.webp 1024w,
                           assets/kitten-6-1920.webp 1920w"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw">
-          <img src="assets/kitten-6-1920.jpg"
-               alt="Caspian — Red Mackerel Tabby Maine Coon male kitten"
-               width="1920" height="1080"
-               loading="lazy">
+          <img src="assets/kitten-6-1920.jpg" alt="Caspian — Red Mackerel Tabby Maine Coon male kitten" width="1920" height="1434" loading="lazy">
         </picture>
           </div>
           <div class="card__body">
@@ -388,11 +361,6 @@
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js');
     }
-  </script>
-  <script type="module" defer>
-    import {onLCP,onINP,onCLS,onFCP,onTTFB} from 'https://unpkg.com/web-vitals@3/dist/web-vitals.attribution.js';
-    const report = ({name,value,rating}) => console.log(`[CWV] ${name}: ${Math.round(value)} (${rating})`);
-    onLCP(report); onINP(report); onCLS(report); onFCP(report); onTTFB(report);
   </script>
 </body>
 </html>

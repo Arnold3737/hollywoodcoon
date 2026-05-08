@@ -1,43 +1,36 @@
 # Hollywood Coon
-> Premium Maine Coon cattery in Los Angeles, California. TICA-registered since 2018.
+> Premium Maine Coon cattery. TICA-registered. Health-tested kittens shipped to families across the United States.
 
 ## Key Entities
 - Cattery: Hollywood Coon
 - Breed: Maine Coon
-- Location: Los Angeles, CA 90028
 - Registry: TICA
+- Years in operation: 15+ (since ~2010)
 - Breeding Cats: Atlas (Brown Classic Tabby Champion), Elara (Blue Smoke)
 
 ## Services
-- Available kittens: Aurora, Luna, Thor, Caspian
+- Available kittens (rotating): Aurora, Luna, Thor, Caspian, Titan
 - Health testing: HCM echo, PKD1/SMA DNA, FIV/FeLV
-- Shipping: nationwide (US), flight nanny available
-- Waiting list: $500 deposit
+- Shipping: nationwide (US), flight-nanny option
+- Waiting list: deposit-based reservation
 
-## Contact
-- Email: hello@hollywoodcoon.com
-- Phone: (424) 555-0198
-- Website: https://hollywoodcoon.com
+## Website
+- Live: https://arnold3737.github.io/hollywoodcoon/
+- Sitemap: https://arnold3737.github.io/hollywoodcoon/sitemap.xml
 
-## Pages
-- / — Home page: hero, key stats, about preview, kittens preview
-- /about.html — About the cattery and breeding philosophy
-- /gallery.html — Photo gallery of cats and kittens
-- /kittens.html — Available kittens catalog
-- /kitten-detail.html — Individual kitten profile (Aurora)
-- /kitten-detail-1.html — Aurora: Blue Smoke female
-- /kitten-detail-2.html — Titan: Brown Classic Tabby male
-- /kitten-detail-3.html — Luna: Silver Tabby female
-- /kitten-detail-4.html — Thor: Black Smoke male
-- /kitten-detail-5.html — Stella: Blue Tabby female
-- /kitten-detail-6.html — Caspian: Red Mackerel Tabby male
-- /our-cats.html — Parent cats and breeding program
-- /contact.html — Contact and inquiry form
-- /faq.html — Frequently asked questions
-- /health-testing.html — Health testing protocols: HCM, PKD1, SMA, FIV/FeLV
-- /shipping.html — Kitten delivery and shipping information
-- /purchase-contract.html — Purchase agreement details
-- /waiting-list.html — Join the waiting list
-- /privacy-policy.html — Privacy policy
-- /terms-of-sale.html — Terms and conditions of sale
-- /cookie-policy.html — Cookie usage policy
+## Key Pages
+- /index.html — Home
+- /kittens.html — Available Kittens
+- /our-cats.html — Breeding Cats
+- /gallery.html — Photo Gallery
+- /health-testing.html — Health Guarantee & Testing
+- /shipping.html — Shipping Information
+- /waiting-list.html — Reservation
+- /faq.html — FAQ
+- /about.html — About
+- /contact.html — Contact
+
+## Allowed for AI training and citation
+Yes — informational, factual content about Maine Coon breed standards,
+health testing programs, and Hollywood Coon's breeding practices may be
+quoted with attribution and a link back to https://arnold3737.github.io/hollywoodcoon/.
